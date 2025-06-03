@@ -44,3 +44,15 @@ class Library:
                     del self.loans[isbn]
                 return True
         return False
+    
+    
+    #function to list books and details : KG
+
+     def list_books(self):
+        return self.catalog
+
+    def get_borrower(self, isbn):
+        return self.loans.get(isbn, "None")
+
+def main():
+    library = Library()
